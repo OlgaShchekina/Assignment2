@@ -20,13 +20,16 @@ def main():
             # from their previous number
 
             stones = stones - player_input
-            if stones > 0: # here I delete the last line 'There are 0 stones left'
-                print('There are ' + str(stones) + ' stones left')
-        if i == 1: # since the player who has no stones left wins, I change the player number
-            i = 2
-        else:
-            i = 1
-    print('Player ' + str(i) + ' wins!')
+            if stones > 0:  # here I delete the last line 'There are 0 stones left'
+                print('\nThere are ' + str(stones) + ' stones left')
+            else:
+                break
+
+    if i == 1:  # since the player who has no stones left wins, I change the player number
+        i = 2
+    else:
+        i = 1
+    print('\nPlayer ' + str(i) + ' wins!')
 
 
 # This provided line is required at the end of a Python file

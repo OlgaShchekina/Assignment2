@@ -11,6 +11,7 @@ def main():
     """
     This program subtracts one real number from another.
     """
+    print('This program subtracts one number from another.')
     num1 = float(input('Enter first number: '))
     num2 = float(input('Enter second number: '))
 

@@ -19,7 +19,7 @@ def main():
         num2 = random.randint(10, 99)
         total = num1 + num2  # count the total ot two numbers
 
-        question = (input('What is ' + str(num1) + ' + ' + str(num2) + '?'))  # asking questions
+        print('What is ' + str(num1) + ' + ' + str(num2) + '?')  # asking questions
         answer = int(input('Your answer: '))  # user should type his answer
 
         # if the user's answer is not correct, he sees a warning and the correct answer
